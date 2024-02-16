@@ -1,3 +1,5 @@
+Sistema operacional Linux
+
 Linux é um termo popularmente empregado para se referir a sistemas operacionais 
 que utilizam o Kernel Linux. O núcleo (ou kernel, em Inglês) foi desenvolvido pelo 
 programador finlandês Linus Torvalds, inspirado no sistema Minix. O seu código-fonte 
@@ -17,9 +19,15 @@ como a GNU General Public License versão 2, devolvendo o código desenvolvido d
 volta para o desenvolvimento do núcleo.
 
 Normalmente, o Linux é encontrado em uma distribuição Linux, seja para um computador 
-ou para um servidor. Algumas distribuições Linux populares incluem: Arch Linux, 
-CentOS, Debian, Fedora Linux, Linux Mint, openSUSE, Ubuntu, além de distribuições 
-focadas para usuários corporativos, como o Red Hat Enterprise Linux ou o 
+ou para um servidor. Algumas distribuições Linux populares incluem: 
+    Arch Linux
+    CentOS
+    Debian 
+    Fedora Linux
+    Linux Mint
+    openSUSE
+    Ubuntu
+Além de distribuições focadas para usuários corporativos, como o Red Hat Enterprise Linux ou o 
 SUSE Linux Enterprise Server. Uma distribuição Linux inclui o núcleo Linux, 
 bibliotecas e utilidades, além de aplicações, como a suíte de escritório 
 LibreOffice, um navegador de internet (normalmente Mozilla Firefox), 
