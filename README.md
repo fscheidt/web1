@@ -4,4 +4,5 @@
 
 - [Aula 1 - Introdução ao HTML](/slides/01-HTML.pdf)
 - [Aula 2 - Listas](/slides/02-LISTAS.pdf)
-- [Aula 3 - Listas](/slides/03-CSS.pdf)
+- [Aula 3 - CSS](/slides/03-CSS.pdf)
+- [Aula 4 - Layout](/slides/04-DIV.pdf)
