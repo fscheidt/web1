@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Layout 1</title>
+  <style>
+    div.pagina { 
+      border: 2px solid #ac7205; 
+      padding: 0;
+      /* para centralizar */
+      width: 90%; /* largura */
+      margin: auto; /* margem esquerda e direita */
+    }
+    div.titulo { 
+      background: orange; 
+      padding-bottom: 0;
+    }
+    div.menu { background: #ac7205; }
+    div.conteudo { 
+      background: #f7ead1; 
+      border-top: 2px solid #ac7205;
+      border-bottom: 2px solid #ac7205;
+    }
+    div.rodape { background: #ccc; }
+    div { padding: 20px; }
+    /* usar somente quando precisa 
+    alterar o comportamento padrão da tag */
+    span { display: block; /* força a quebra de linha */ }
+    p { display: inline; /* sem quebra de linha */ }
+  </style>
+</head>
+<body>
+  <div class="pagina">
+    <div class="titulo">
+      Título
+      <div class="menu">Menu</div>
+    </div>
+    <div class="conteudo">
+      <h2>Conteúdo</h2>
+
+      <p>Artigos</p>
+      <p>Ajuda</p>
+
+      <span>Info</span>
+      <span>Contato</span>
+    </div>
+    <div class="rodape">Rodapé</div>
+  </div>
+</body>
+</html>
