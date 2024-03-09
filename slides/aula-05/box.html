@@ -1,0 +1,47 @@
+<html>
+<head>
+    <title>Box model</title>
+    <style>
+        /* reseta todos valores de margens */
+        * { margin: 0; }
+        body{
+            font-size: 16px;
+         }
+        div{ 
+            font-size: 1rem;
+            border: 1px solid black;
+            width: 100px; /* largura */
+            height: 100px; /* altura */
+            padding: 10px;
+            margin: 10px;
+            /* largura 100 + 2 + 20 = 122px */
+        }
+        div.relativo{
+            width: 40%; /* espaço da "tela" */
+        }
+        div.absoluto{
+            /* compartilha espaço da linha */
+            display: inline-block;
+        }
+        .absoluto:hover{
+            /* esconde tags dessa classe */
+            display: none;
+        }
+        .relativo:hover{
+            /* hover - evento do mouse */
+            background: aquamarine;
+        }
+        h1{ font-size: 2rem; }
+    </style>
+</head>
+<body>
+    <h1>Modelo box</h1>
+    <div class="absoluto">A1</div>
+    <div class="absoluto">A2</div>
+
+    <div class="relativo">B1</div>
+    <div class="absoluto2">
+        <div class="relativo">B2</div>
+    </div>
+</body>
+</html>
