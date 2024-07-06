@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cadastro usuário</title>
+    <style>
+    form div{
+        padding: 10px;
+    }    
+    </style>
+</head>
+<body>
+    <h3>Cadastro novo usuário</h3>
+    <form>
+        <div>
+            <label>Nome:</label>
+            <input type="text" name="nome" required>
+        </div>
+        <div>
+            <label>Senha:</label>
+            <input type="password" name="senha">
+        </div>
+        <div>
+            <label>Data nascimento:</label>
+            <input type="date" name="nasc">
+        </div>
+        <div>
+            <label>Estado:</label>
+            <select name="estados" required>
+                <option value="">------</option>
+                <option value="PR">PARANA</option>
+                <option value="SE">SERGIPE</option>
+                <option value="AC">ACRE</option>
+            </select>
+        </div>
+
+        <div>
+            <label>Quais são suas qualidades?</label>
+            <textarea cols="40" rows="10" ></textarea>
+        </div>
+
+        <div>
+            <label>Receber promoções?</label>
+            <input type="checkbox" name="promo">
+        </div>
+        <div>
+            <label>Genero:</label>
+            Masculino<input type="radio" name="genero">
+            Feminino<input type="radio" name="genero">
+            Outro<input type="radio" name="genero">
+        </div>
+
+
+        <button>salvar</button>
+    </form>
+<!-- 
+http://127.0.0.1:5500/slides/aula-06/cadastro.html?nome=Juca
+-->
+</body>
+</html>
