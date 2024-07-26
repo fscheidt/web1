@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cadastro GRID</title>
+
+    <link rel="stylesheet" href="estilo.css"/>
+
+    <style>
+    .grid{
+        /* background-color: #7fffd4; */
+        display: grid;
+        grid-template-columns: max-content max-content;
+        gap: 10px; /* espaçamento entre linhas */
+        align-items: center; /* alinhamento vertical */
+    }
+    .grid label{
+        justify-self: right;
+    }
+    input:invalid{
+        /*background-color: #fc9393;*/
+        color: red;
+    }
+    input:focus:invalid{
+        /* valida somente quando o elemento ganha o foco */
+        background-color: #fc9393;
+    }
+    input:valid{
+        background-color: #c4fc93;
+    }
+    </style>
+</head>
+<body>
+    <h3>Cadastro novo usuário</h3>
+    <form class="grid">
+        <label>Nome:</label>
+        <input type="text" name="nome" required 
+               minlength="3" maxlength="60">
+
+        <label>Email:</label>
+        <input type="email" name="email" required autocomplete="off">
+
+        <label>Senha:</label>
+        <input type="password" name="senha" 
+            placeholder="6 caracteres">
+        
+        <label>Data nascimento:</label>
+        <input type="date" name="nasc">
+
+        <label>Idade:</label>
+        <input type="number" name="idade" disabled>
+
+        <label>Volume:</label>
+        <input type="range" name="volume">
+
+        <button>Enviar</button>
+
+    </form>
+</body>
+</html>
