@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style> 
+        table { border-collapse: collapse; }
+        td, th, div{ padding: 5px 8px; }
+        th, .header{ 
+            background-color: #e7e79b;
+            font-weight: bold;
+        }
+        div.grid{
+            display: grid;
+            grid-template-columns: max-content max-content;
+            border: 0;
+            /*
+            gap: 1px;
+            align-items: baseline;
+            justify-items: center;
+            */
+        }
+        div{
+            border: 1px solid black;
+        }
+        h2{
+            /* cabecalho - ocupa duas colunas */
+            grid-column: 1/3;
+        }
+    </style>
+
+</head>
+<body>
+
+<h1>TABELA</h1>
+
+<table border="1">
+    <caption>Disciplinas 1o Semestre</caption>
+    <tr>
+        <th>Disciplina</th> 
+        <th>Docente</th>
+    </tr>
+    <tr>
+        <td>Desenvolvimento Web1</td>
+        <td>Felippe</td>
+    </tr>
+    <tr>
+        <td>Introdução computação</td>
+        <td>Julio</td>
+    </tr>
+    <tr>
+        <td>Lógica</td>
+        <td>Itamar</td>
+    </tr>
+</table>
+
+
+<h1>GRID</h1>
+
+<div class="grid">
+    <h2>Disciplinas 1o Semestre</h2>
+    <div class="header">Disciplina</div> 
+    <div class="header">Docente</div>
+
+    <div>Desenvolvimento Web1</div>
+    <div>Felippe</div>
+
+    <div>Introdução computação</div>
+    <div>Julio</div>
+
+    <div>Lógica</div>
+    <div>Itamar</div>
+
+
+</div>
+
+
+
+
+
+
+    
+</body>
+</html>
