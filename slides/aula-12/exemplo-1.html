@@ -2,12 +2,17 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
-    
+    <title>Javascript exemplo #1</title>
 </head>
-<body>
-</body>
+<body></body>
 <script>
+    /*
+    Exemplo:
+     - Declação de variável com let
+     - leitura e impressão de dados com prompt, alert, confirm
+     - escrever html com document.write
+     - IF-else
+    */
     let dataHora = new Date().toLocaleString("pt-br");
     // função para imprimir no console do navegador valor
     // das variaveis
@@ -17,24 +22,22 @@
         "<h1>Data e Hora: " + dataHora + "</h1>");
 
     // Ex2 -------------------------------------------
-    /*
+    
     let valor = prompt("Digite o valor em dolar $:");
     // typeof - verificar o tipo da variavel
     console.log(typeof(valor));
     let valorReais = valor * 5.41;
     console.log(typeof(valorReais));
     alert("Valor em reais: R$ " + valorReais);
-*/
+
     // Ex3 -------------------------------------------
     
-let resp = confirm("Deseja realmente cancelar o plano?");
-console.log(typeof(resp), resp);
-if(resp == true){
-    document.writeln("plano cancelado! volte quando puder");
-}else{
-    document.writeln("obrigado por continuar");
-}
-
-
+    let resp = confirm("Deseja realmente cancelar o plano?");
+    console.log(typeof(resp), resp);
+    if(resp == true){
+        document.writeln("plano cancelado! volte quando puder");
+    }else{
+        document.writeln("obrigado por continuar");
+    }
 </script>
-</htmdl>
+</html>
