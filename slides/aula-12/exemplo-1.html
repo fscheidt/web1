@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    
+</head>
+<body>
+</body>
+<script>
+    let dataHora = new Date().toLocaleString("pt-br");
+    // função para imprimir no console do navegador valor
+    // das variaveis
+    console.log(typeof(dataHora));
+    // alert("Data e Hora: " + dataHora);
+    document.writeln(
+        "<h1>Data e Hora: " + dataHora + "</h1>");
+
+    // Ex2 -------------------------------------------
+    /*
+    let valor = prompt("Digite o valor em dolar $:");
+    // typeof - verificar o tipo da variavel
+    console.log(typeof(valor));
+    let valorReais = valor * 5.41;
+    console.log(typeof(valorReais));
+    alert("Valor em reais: R$ " + valorReais);
+*/
+    // Ex3 -------------------------------------------
+    
+let resp = confirm("Deseja realmente cancelar o plano?");
+console.log(typeof(resp), resp);
+if(resp == true){
+    document.writeln("plano cancelado! volte quando puder");
+}else{
+    document.writeln("obrigado por continuar");
+}
+
+
+</script>
+</htmdl>
