@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Modo dark</title>
+<style>
+.dark{ 
+    color: white;
+    background-color: #212020; 
+}
+.white{ 
+    color: #212020;
+    background-color: white; 
+}
+</style>
+<script>
+function alterar(){
+    let body = document.getElementsByTagName("body")[0];
+    console.log(body);
+    body.setAttribute("class","dark"); // seta classe CSS
+    let h1 = document.querySelector("h1");
+    h1.innerText = "Modo escuro";
+}
+function alterarClaro(){
+    // pega uma referencia a tag <body>
+    let body = document.querySelector("body");
+    body.setAttribute("class","white"); // seta classe CSS
+    // como alterar o título <h1> 
+    let h1 = document.querySelector("h1");
+    h1.innerText = "Modo claro";
+}
+</script>
+</head>
+<body>
+<h1>Título principal</h1>
+<button onclick="alterar()">Modo escuro</button>
+<button onclick="alterarClaro()">Modo claro</button>
+    
+</body>
+</html>
