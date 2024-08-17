@@ -8,3 +8,5 @@
 - [Aula 4 - Layout](/slides/04-DIV.pdf)
 - [Aula 5 - Display](/slides/05-CSS-display.pdf)
 - [Aula 6 - Formulários](/slides/06-FORM.pdf)
+- [Aula 7 - Grid layout e tabela](/slides/07-GRID-TABLE.pdf)
+- [Aula 12 - Javascript](/slides/12-JS.pdf)
