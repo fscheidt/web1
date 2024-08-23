@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lê entrada (input)</title>
+<script>
+function converter(){
+    let input = document.querySelector("#dolar");
+    let res = Number(5.41 * input.value);
+    // atualiza valor em <p> e arredonda para duas casas decimais
+    res = "R$ " + res.toFixed(2);
+    document.querySelector("#resultado").innerText = res;
+    // coloca cursor do mouse na input
+    input.focus();
+}
+</script>
+</head>
+<body>
+    <p>Digite o valor em dólar:</p>
+    <input id="dolar" autocomplete="off" autofocus>
+    <button onclick="converter()"> converter </button>
+    <p id="resultado"></p>
+</body>
+</html>

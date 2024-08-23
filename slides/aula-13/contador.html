@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+<script>
+    let valor = 0;
+    function incrementar(){
+        // percorre a árvore DOM
+        let div = document.querySelector("#valor");
+        valor++;
+        // alterar o conteudo (texto) da div#valor
+        div.innerText = valor;
+        // se o valor passar de 10, volta para 0
+    }
+</script>
+</head>
+<body>
+    <button onclick="incrementar()"> + </button>
+    <div id="valor"> 0 </div>
+</body>
+</html>
