@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Exemplo de vetores</title>
+  <script>
+    let produtos = [ 10, 20, 5, 45 ];
+    console.log(`tamanho array: ${produtos.length}`);
+    console.log(` ${produtos[0]} `)
+    // soma manual dos produtos:
+    /* let soma = produtos[0] + produtos[1] 
+    + produtos[2] + produtos[3];
+    */
+    let soma = 0;
+    for(let i=0; i < produtos.length; i++){
+      soma = produtos[i] + soma; 
+      // soma += produtos[i];
+    }
+    console.log(`soma: ${soma}`);
+
+  </script>
+</head>
+<body>
+  
+</body>
+</html>

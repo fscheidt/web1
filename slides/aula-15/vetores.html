@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Vetores</title>
+  <script>
+    // https://dog.ceo/dog-api/
+
+const dogs = [
+  "https://images.dog.ceo/breeds/sheepdog-indian/Himalayan_Sheepdog.jpg",
+  "https://images.dog.ceo/breeds/labrador/n02099712_6997.jpg",
+  "https://images.dog.ceo/breeds/terrier-yorkshire/n02094433_3983.jpg",
+  "https://images.dog.ceo/breeds/terrier-bedlington/n02093647_28.jpg"
+]
+let i = 0;
+function nextDog(){
+  photo.src = dogs[i];
+  document.querySelector("pre").innerHTML = `i= ${i}`; 
+  i++;
+}
+function prevDog(){}
+</script>
+</head>
+<body>
+  <button onclick="nextDog()">next</button>
+  <button onclick="prevDog()">prev</button>
+  <pre>i= </pre>
+  <div>
+    <img id="photo" src="">
+  </div>
+</body>
+</html>
