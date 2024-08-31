@@ -12,11 +12,11 @@ const dogs = [
   "https://images.dog.ceo/breeds/terrier-yorkshire/n02094433_3983.jpg",
   "https://images.dog.ceo/breeds/terrier-bedlington/n02093647_28.jpg"
 ]
-let i = 0;
+let i = -1;
 function nextDog(){
-  photo.src = dogs[i];
-  document.querySelector("pre").innerHTML = `i= ${i}`; 
   i++;
+  photo.src = dogs[i];
+  document.querySelector("pre").innerHTML = `i=${i}`; 
 }
 function prevDog(){}
 </script>
@@ -29,4 +29,7 @@ function prevDog(){}
     <img id="photo" src="">
   </div>
 </body>
+<script>
+  nextDog();
+</script>
 </html>
