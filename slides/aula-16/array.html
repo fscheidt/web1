@@ -3,8 +3,71 @@
 <head>
   <meta charset="UTF-8">
   <title>Arrays</title>
+  <script>
+    let alunos = ["julia", "joao", "angelica", "juca"];
+    // push() adiciona um novo item ao array
+    alunos.push("andrieli");
+    // sort() coloca em ordem alfabetica
+    alunos.sort();
+    // pop() remove o ultimo nome da lista
+    alunos.pop();
+    alunos.forEach( (n) => { 
+      console.log( n.toUpperCase() )
+    });
+    // slice() fatia o array
+    console.log(alunos.slice(2,4))
+    // imprime o primeiro nome da lista
+    console.log(alunos[0])
+    console.log(typeof(alunos))
+    console.log(alunos)
+  </script>
 </head>
 <body>
+
+  <pre>
+    Declara um novo array no javascript:
+
+    let alunos = ["julia", "joao", "angelica"];
+
+
+    (1) Percorrer os elementos do array alunos:
+
+      for(let i=0;i< alunos.length;i++){ 
+        let n = alunos[i];
+        console.log( n );
+      }
+    
+
+    (2) Percorrer os elementos com forEach
+
+    alunos.forEach( n => { console.log( n )});
+
+
+    // push() adiciona um novo item ao array
+    alunos.push("andrieli");
+
+    // sort() coloca em ordem alfabetica
+    alunos.sort();
+
+    // pop() remove o ultimo nome da lista
+    alunos.pop();
+
+    alunos.forEach( (n) => { 
+      console.log( n.toUpperCase() )
+    });
+
+    // slice() fatia o array
+    console.log(alunos.slice(2,4))
+
+    // imprime o primeiro nome da lista
+    console.log(alunos[0])
+    
+    console.log(typeof(alunos))
+    console.log(alunos)
+
+
+  </pre>
+
   
 </body>
 </html>
