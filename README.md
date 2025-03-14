@@ -8,12 +8,18 @@
 - Período aulas: 13/03/25 à jul/25
 - **[Códigos](https://github.com/fscheidt/web1)**
 
+## Aula 01
+- [Introdução html (slide)](/aulas/01/01%20-%20HTML.pdf)
+- [código](/aulas/01/aula1.html)
 
-## settings.json
+## VSCode
+
+### settings.json
 ```json
 {
     "html.autoClosingTags": false,
-    "files.autoSave": "afterDelay"
+    "files.autoSave": "afterDelay",
+    "editor.wordWrap": "on",
 }
 ```
 
