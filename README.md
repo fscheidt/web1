@@ -8,21 +8,48 @@
 - Período aulas: 13/03/25 à jul/25
 - **[Códigos](https://github.com/fscheidt/web1)**
 
+---
+
+<br>
+
 ## Aula 01
-- [Introdução html (slide)](/aulas/01/01%20-%20HTML.pdf)
+- [Introdução html (slide)](/aulas/01/HTML.pdf)
 - [código](/aulas/01/aula1.html)
+
+<br>
+
+## Aula 02
+ - 20/03
+
+
+<br>
+<br>
 
 ## VSCode
 
-### settings.json
+Configurações do Visual Code
+
+
+### Extensions
+
+Extensões úteis na programação HTML/CSS/js:
+
+- **Open In Default Browser**: `peakchen90.open-html-in-browser` 
+
+### Settings 
+
+**Nível**: `HARD`
+
+**Arquivo:** `settings.json`
+
 ```json
 {
     "html.autoClosingTags": false,
     "files.autoSave": "afterDelay",
     "editor.wordWrap": "on",
+    "editor.lineHeight": 1.4,
+    "editor.stickyScroll.enabled": false,
+    "editor.wordWrap": "on",
+    "editor.wordWrapColumn": 120
 }
 ```
-
-## extensions
-- open in browser
-- Prettier - code formatter
