@@ -13,13 +13,16 @@
 <br>
 
 ## Aula 01
-- [Introdução html (slide)](/aulas/01/HTML.pdf)
+- 13/03
+- Introdução HTML (SLIDES no AVA)
 - [código](/aulas/01/aula1.html)
 
 <br>
 
 ## Aula 02
- - 20/03
+- 20/03
+- Listas HTML
+- código
 
 
 <br>
