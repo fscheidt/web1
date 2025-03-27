@@ -1,5 +1,8 @@
 # Desenvolvimento Web I
 
+<details>
+<summary>INFO DA DISCIPLINA</summary>
+
 - **[AVA](https://ava.ifpr.edu.br/course/view.php?id=13095)**
 - Curso: TADS
 - Período: 1°
@@ -8,22 +11,36 @@
 - Período aulas: 13/03/25 à jul/25
 - **[Códigos](https://github.com/fscheidt/web1)**
 
+</details>
+
 ---
 
 <br>
+
+## Aula 03
+- 27/03
+- CSS e Layout
+- [página curso](/aulas/03/curso.html)
+
+<br>
+
+---
+
+## Aula 02
+- 20/03
+- Listas HTML
+- [código](/aulas/02/listas.html)
+
+<br>
+
+---
 
 ## Aula 01
 - 13/03
 - Introdução HTML (SLIDES no AVA)
 - [código](/aulas/01/aula1.html)
 
-<br>
-
-## Aula 02
-- 20/03
-- Listas HTML
-- código
-
+---
 
 <br>
 <br>
