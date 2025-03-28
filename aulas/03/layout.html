@@ -6,6 +6,7 @@
   <title>Document</title>
   <style>
     div { 
+      background: white;
       border: 1px solid black;
       /* ESPAÇAMENTO INTERNO */
       padding: 10px;
@@ -25,19 +26,33 @@
       /* margin: 10px 450px 20px 0; */
     }
     .dois{
-      /* largura */
+      /* largura dinamica*/
       width: 50%;
+      /* largura estatica */
+      /* width: 800px; */
+    }
+    #conteudo{
+      background: yellow;
+      width: 50%;
+      /* calcula automaticamente a margem
+      a esquerda e direita
+       */
+      margin: auto;
     }
   </style>
 </head>
 <body>
 
-  <div>ABC</div>
+  <div id="conteudo">
 
-  <div class="dois">DEF</div>
+    <div>ABC</div>
 
-  <div>
-    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt commodi animi delectus laudantium deserunt! Commodi cum adipisci nostrum at, sint soluta tempora esse, libero, molestiae sit optio beatae pariatur fuga.</span>
+    <div class="dois">DEF</div>
+
+    <div>
+      <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt commodi animi delectus laudantium deserunt! Commodi cum adipisci nostrum at, sint soluta tempora esse, libero, molestiae sit optio beatae pariatur fuga.</span>
+    </div>
+
   </div>
   
 </body>
