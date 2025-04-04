@@ -1,12 +1,43 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Modelo Box</title>
   <style>
+    * {
+      /* regra universal 
+      Aplicada a todos os elementos
+      HTML*/
+      padding: 0;
+      margin: 0;
+    }
     main {
       font-family: "Ubuntu Sans";
+    }
+    h1{
+      background: lightgreen;
+    }
+    div{
+      background: lightblue;
+    }
+    div.caixa{
+      width: 200px;
+      border: 2px solid black;
+      padding: 10px 0px;
+      margin: 5px;
+      height: 200px;
+      box-sizing: border-box;
+      display: inline-block;
+    }
+    span{
+      border: 1px solid black;
+      display: block;
+    }
+    b {
+      display: block
+    }
+    .caixa.c2:hover {
+      /* display: none; */
+      background: yellow;
     }
   </style>
 </head>
@@ -15,9 +46,17 @@
   <main>
 
     <h1>Box model</h1>
-
     <div>Conteudo A</div>
 
+    <span>ABC</span>
+    <span>123</span>
+
+    <p>lorem muito bom<b></b> bom o livro
+      recomendo lerem em latim
+    </p>
+
+    <div class="caixa">Caixa 1</div>
+    <div class="caixa c2">Caixa 2</div>
 
   </main>
   
