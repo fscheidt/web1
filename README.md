@@ -17,6 +17,14 @@
 
 <br>
 
+## Aula 06
+- 17/04
+- Grid layout
+
+## Aula 05
+- 10/04
+- Tabelas
+
 ## Aula 04
 - 03/04
 - Modelo Box

@@ -1,0 +1,18 @@
+th {
+  background: lightblue;
+}
+tr:nth-child(2n){
+  background: beige;
+}
+table{
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+caption{
+  font-style: italic;
+  font-size: small;
+}
+td{
+  padding: 4px;
+  border: 1px solid #ccc;
+}
