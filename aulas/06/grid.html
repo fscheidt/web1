@@ -4,12 +4,39 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Grid layout</title>
+
+<style>
+  div.item{ 
+    border: 1px solid black; 
+    padding: 10px;
+  }
+  div.item.cinco{
+    background: lightgreen;
+  }
+  div.grid-container{
+    border: 1px solid red;
+    display: grid;
+    justify-items: end;
+    padding: 10px;
+    gap: 10px; /* espaçamento */
+    /* quantidade de colunas: 3 */
+    grid-template-columns: 1fr 2fr 3fr;
+    /* grid-template-columns: 100px 1fr; */
+    /* grid-template-columns: repeat(20, 1fr); */
+    /* grid-template-columns: 100px 100px; */
+    /* width: fit-content; */
+  }
+</style>
+
 </head>
 <body>
   <div class="grid-container">
     <div class="item">01</div>
     <div class="item">02</div>
     <div class="item">03</div>
+    <div class="item">04</div>
+    <div class="item cinco">05</div>
+    <div class="item">06</div>
   </div>	
 </body>
 </html>
