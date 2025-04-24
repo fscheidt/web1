@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form</title>
+  <style>
+    form{
+      display: grid;
+      grid-template-columns: min-content;
+      gap: 20px;
+    }
+    input:focus:invalid{
+      color: red;
+      background: lightcoral;
+    }
+    input:focus:valid{
+      background: lightgreen;
+    }
+  </style>
+</head>
+<body>
+
+  <form>
+    <label>
+      Nome: 
+      <input 
+      type="text" required
+      placeholder="Digite seu nome completo" >
+    </label>
+    <label>
+      Nascimento: 
+      <input type="date" name="nascimento" >
+    </label>
+    <label>
+      Peso: 
+      <input type="number" 
+      placeholder="kg" min="20" max="150" >
+    </label>
+
+    <label>
+      Senha: <input type="password" 
+      minlength="8" maxlength="12">
+    </label>
+
+    <label>
+      Volume: <input type="range" min="0" max="100">
+    </label>
+
+    <select>
+      <option>--selecione o estado--</option>
+      <option>Paraná</option>
+      <option>RS</option>
+      <option>SC</option>
+    </select>
+
+    <label>
+      Observações:
+      <textarea rows="10"></textarea>
+    </label>
+
+    <button>enviar</button>
+
+  </form>
+  
+</body>
+</html>
