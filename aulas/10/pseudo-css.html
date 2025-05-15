@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    li:first-child{ 
+      font-weight: bold;
+    }
+    a, 
+    a:visited { 
+      color: green;
+      text-decoration: none;
+    }
+    a:hover{
+      text-decoration: underline;
+      background-color: yellow;
+    }
+    li::first-letter{
+      text-transform: capitalize;
+      color: red;
+    }
+    ul{
+      list-style: none;
+    }
+    li::before {
+      content: " ✅ ";
+    }
+    input:focus{
+      background-color: rgb(241, 241, 208);
+    }
+    input:invalid{
+      background-color: rgb(255, 180, 246);
+      color: red;
+    }
+    input:required:valid{
+      background-color: rgb(218, 233, 253);
+      color: blue;
+    }
+  </style>
+</head>
+<body>
+
+  <input 
+    placeholder="digite a senha"
+    type="text" 
+    required minlength="3">
+
+  <a href="https://google.com">home</a>
+
+  <ul>
+    <li>brasil</li>
+    <li>chile</li>
+    <li>bolivia</li>
+  </ul>
+  
+</body>
+</html>
