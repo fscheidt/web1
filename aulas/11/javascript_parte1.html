@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>JS - PARTE 1</title>
+  <style>
+    p { font-weight: bold; }
+  </style>
+</head>
+<body>
+  <p>Introdução ao Javascript</p>
+</body>
+
+<script>
+
+  // DECLARAÇÃO DE VARIÁVEIS
+
+  // alert("Hello world!");
+  // let idade;
+  let mensagem = "Hello world!"; // string
+  let ano = 2025;                // number
+  let pi = 3.1416;               // float
+  let is_aula_web1 = true;       // bool
+  // alert(mensagem);
+  console.log(mensagem);
+  /* função para verificar o tipo da var. */
+  console.log(typeof(mensagem));
+
+  let dataAtual = new Date().toLocaleDateString();
+
+  let hora = new Date().toLocaleTimeString()
+
+  // escreve valor data no console
+  console.log(dataAtual);
+  console.log(hora);
+  // escreve o valor da hora no html
+  document.writeln(hora);
+  // concatena a tag b e o valor da hora
+  document.writeln("<br><b>" + hora + "</b>");
+  
+  // exemplo de laço de repitição
+  for(let i=0 ; i<10 ; i++){
+    document.writeln("<br><b>" + hora + "</b>");
+  }
+
+  // LÊ UM VALOR 
+  let idade = Number(prompt("Digite sua idade:"));
+  alert("sua idade: " + idade);
+
+  if (idade < 18){
+    alert("passaporte não disponível")
+  }
+  else{
+    alert("ok, pode prosseguir!")
+  }
+  // document permite manipular o html
+  document.bgColor = "yellow";
+
+
+</script>
+
+</html>
