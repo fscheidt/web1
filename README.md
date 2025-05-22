@@ -17,6 +17,10 @@
 
 <br>
 
+# Aula 11
+- 22/05
+- Introdução ao JavaScript
+
 ## Aula 06
 - 17/04
 - Grid layout
