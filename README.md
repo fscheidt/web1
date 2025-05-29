@@ -17,6 +17,10 @@
 
 <br>
 
+# Aula 12
+- 29/05
+- Funções e eventos
+
 # Aula 11
 - 22/05
 - Introdução ao JavaScript

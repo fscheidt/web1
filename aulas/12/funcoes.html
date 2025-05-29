@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Funções</title>
+  <script>
+    let x = 100; // variavel global
+    // define a função:
+    
+    function calcular(valor){
+      alert("calculando..." + valor);
+    }
+    // calcular(); // chama a função
+    // calcular(88);
+    function calcularDesconto(valor){
+      let novoValor = valor * 0.9; // variavel local
+      return novoValor;
+    }
+    function exibeDesconto(){
+      let desc = calcularDesconto(400);
+      // calcularDesconto(400);
+      alert("Valor com desconto: " + desc)
+      document.writeln(desc)
+    }
+  </script>
+</head>
+<body>
+
+  <button 
+    onclick="calcular(88)">
+    executar função
+  </button>
+
+  <button onclick="exibeDesconto()">
+    10%
+  </button>
+
+  <button onclick="calcular('aaa')">3</button>
+
+</body>
+</html>
