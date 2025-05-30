@@ -5,17 +5,27 @@
   <title>Eventos</title>
   <script>
     function calcularDesconto(valor){
-      // let novoValor = valor * 0.9;
-      // return novoValor;
-      document.bgColor = "red";
+      let desconto = valor * 0.9;
+      // busca pela tag cujo id == "desc"
+      // e define o conteudo (innerHTML)
+      document
+      .querySelector("#desc")
+      .innerHTML="R$ " + desconto.toFixed(2);
+      // equivalente a:
+      // let p = document.querySelector("#desc");
+      // p.innerHTML = "R$ " + desconto.toFixed(2);
+      // p.style.backgroundColor = "yellow";
+
+      return desconto;
     }
-  </script>
-</head>
+</script></head>
 <body>
   <input 
-    placeholder="Digite o valor"
-    onkeyup="calcularDesconto()"
-    type="text">
+    onkeyup="calcularDesconto(this.value)"
+    onchange="calcularDesconto(this.value)"
+    placeholder="Digite o valor" type="number">
+
+  <p id="desc">R$ 0,00</p>
   
 </body>
 </html>
