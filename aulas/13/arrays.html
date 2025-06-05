@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Arrays</title>
+</head>
+<body>
+  <h1>Arrays</h1>
+  <p>Arrays, vetores, listas, ...</p>
+
+  <script>
+    // Alunos matriculados em Web1
+    // declara alunos como array
+    let alunos = [
+      "Matheus", "Antonio"
+    ];
+    console.log(typeof(alunos));
+    console.log(alunos);
+    // acessa o primeiro item do array
+    console.log(alunos[0]);
+    // segundo item do array
+    console.log(alunos[1]);
+    // console.log(alunos[2]); 
+
+    // a função push adiciona um item no array
+    alunos.push("Breno");
+    console.log(alunos);
+    console.log(alunos[2]); 
+
+    // a função pop() remove um item
+    alunos.pop();
+    // alunos.pop();
+    console.log(alunos);
+    // tamanho do array
+    console.log(alunos.length);
+    // percorrer os itens no array com for:
+    for(let i = 0; i < alunos.length; i++){
+      console.log(alunos[i]); 
+    }
+    // forEach ( abordagem "moderna" )
+    console.log("# forEach")
+    // e == alunos[i]
+    alunos.forEach(e => console.log(e));
+    // ordena em ordem alfabetica
+    console.log("# sort");
+    alunos.sort();
+    console.log(alunos); 
+    // alunos.reverse();
+
+  </script>
+</body>
+</html>

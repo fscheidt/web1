@@ -17,6 +17,10 @@
 
 <br>
 
+# Aula 13
+- 05/06
+- Arrays
+
 # Aula 12
 - 29/05
 - Funções e eventos

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <script>
+    let paises = [
+      "../images/china.png",
+      "../images/germany.png",
+      "../images/india.png",
+    ];
+    let i = 0;
+    function next(){
+      // (1) incrementa i ...
+      // (2) altera o atributo src da imagem
+      photo.src = paises[i];
+    }
+  </script>
+</head>
+<body>
+  <button>next</button>
+  <p></p>
+  <img 
+    id="photo" 
+    src="" 
+    width="400"/>
+
+  <script>next();</script>
+</body>
+</html>
