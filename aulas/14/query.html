@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+    // 1. aguarda carregar o HTML (construção do DOM)
+    window.onload = ()=> {
+      // 2. selecionar o elemento pelo seu ID
+      let div = document
+      .getElementById("mensagem");
+      div.innerText = "conteúdo div B";
+
+      // 3. Seleciona um elemento por um seletor (css)
+      let div_b = document
+      .querySelector("#mensagem"); // POR ID
+      div_b.innerText = "DIV B";
+      
+      let div_c = document
+      .querySelector(".mensagem"); // CLASSE
+      div_c.innerText = "DIV C";
+      
+      let div_a = document
+      .querySelector("div"); // PELO NOME TAG
+      div_a.innerText = "DIV A";
+      // 4. ---- ADICIONAR UM EVENTO CLICK AO BUTTON
+      document.querySelector("button")
+      .addEventListener("click", ()=>{
+        // obtem a input
+        let input = document.querySelector("input");
+        // 5. getAttribute = lê o valor do atributo type
+        if (input.getAttribute("type") == "password")
+          input.setAttribute("type","text");// 6. escreve o valor do atributo type
+        else
+          input.setAttribute("type","password");
+      })
+      // 7. querySelectorAll -> seleciona todas as divs
+      // e salva em um array
+      let array_divs = document.querySelectorAll("div");
+      array_divs.forEach((div) => {
+        div.style.border="1px solid black"
+      })
+    }
+    // 8. ADICIONAR DOIS BUTTONS (MODO DARK) e (MODO LIGHT)
+    // no modo dark -> seta o atributo class da body para uma regra css => background black, color white
+  </script>
+</head>
+<body>
+  <!-- buttons modo dark e light-->
+  <div>A</div>
+  <div id="mensagem">B</div>
+  <div class="mensagem">C</div>
+  <input type="password" value="1234"> <button>VER</button>
+</body>
+</html>

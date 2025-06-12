@@ -17,6 +17,10 @@
 
 <br>
 
+# Aula 14
+- 12/06
+- Eventos dinâmicos e DOM
+
 # Aula 13
 - 05/06
 - Arrays
