@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Password</title>
+  <style>
+    body { zoom: 1.5; }
+    #show {
+      background: #f0f8ff00;
+      filter: opacity(0.5);
+      border: 0;
+    }
+    #show:hover {
+      filter: opacity(1);
+      cursor: pointer;
+    }
+  </style>
+  <script>
+    window.onload = ()=> {
+      const form = document.querySelector("#form");
+      const result = document.querySelector("#result");
+      form.addEventListener("submit", (ev)=>{
+        ev.preventDefault();        
+        if (form.secret.value.length < 8) {
+          result.innerText = "Password deve conter 8 caracteres";
+        }else {
+          result.innerText = `✅ Password possui ${form.secret.value.length} caracteres`;
+        }
+      });
+    }
+  </script>
+</head>
+<body>
+
+  <form id="form">
+    <input name="secret" type="password" value="admin12"> 
+    <button>validate</button>
+  </form>
+
+  <div id="result"></div>
+
+</body>
+</html>
