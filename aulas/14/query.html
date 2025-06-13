@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>querySelector</title>
   <script>
     // 1. aguarda carregar o HTML (construção do DOM)
     window.onload = ()=> {
@@ -25,18 +25,6 @@
       .querySelector("div"); // PELO NOME TAG
       div_a.innerText = "DIV A";
 
-      // 4. ---- ADICIONAR UM EVENTO CLICK AO BUTTON
-      document.querySelector("button")
-      .addEventListener("click", ()=>{
-        // obtem a input
-        let input = document.querySelector("input");
-        // 5. getAttribute = lê o valor do atributo type
-        if (input.getAttribute("type") == "password")
-          input.setAttribute("type","text");// 6. escreve o valor do atributo type
-        else
-          input.setAttribute("type","password");
-      })
-      
       // 7. querySelectorAll -> seleciona todas as divs
       // e salva em um array
       let array_divs = document.querySelectorAll("div");
@@ -49,10 +37,8 @@
   </script>
 </head>
 <body>
-  <!-- buttons modo dark e light-->
   <div>A</div>
   <div id="mensagem">B</div>
   <div class="mensagem">C</div>
-  <input type="password" value="1234"> <button>VER</button>
 </body>
 </html>
