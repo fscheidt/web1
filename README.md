@@ -1,7 +1,22 @@
 # Desenvolvimento Web I
-- [Desenvolvimento Web I](https://github.com/fscheidt/web1)
-# Aula 01
+
+<details>
+<summary>INFO DA DISCIPLINA</summary>
+
+- **[AVA](https://ava.ifpr.edu.br)**
+- Curso: TADS
+- Período: 1°
+- Horário: sexta, 19:00 às 22:20 (Lab 1)
+- Período letivo: 2026/1
+- Aulas: 13/02 à 10/07
+- **[Códigos](https://github.com/fscheidt/web1)**
+
+</details>
+
+
+## Aula 01
 
 - [Introdução ao HTML (slides)](aulas/01/01%20-%20HTML.pdf)
+- [Código (html)](aulas/01/exemplo1.html)
 
-<img src="aulas/01/dog.jpg">
+## Aula 02
