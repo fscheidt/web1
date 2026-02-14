@@ -1,7 +1,7 @@
 # Desenvolvimento Web I
-
+- [Desenvolvimento Web I](https://github.com/fscheidt/web1)
 # Aula 01
 
-- [Introdução ao HTML (slides)](aulas/01%20-%20HTML.pdf)
+- [Introdução ao HTML (slides)](aulas/01/01%20-%20HTML.pdf)
 
-<img src="https://images.dog.ceo/breeds/entlebucher/n02108000_2675.jpg">
+<img src="aulas/01/dog.jpg">
