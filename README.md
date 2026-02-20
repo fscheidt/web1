@@ -3,7 +3,7 @@
 <details>
 <summary>INFO DA DISCIPLINA</summary>
 
-- **[AVA](https://ava.ifpr.edu.br)**
+- **[AVA](https://ava.ifpr.edu.br/course/view.php?id=13095)**
 - Curso: TADS
 - Período: 1°
 - Horário: sexta, 19:00 às 22:20 (Lab 1)
@@ -20,3 +20,5 @@
 - [Código (html)](aulas/01/exemplo1.html)
 
 ## Aula 02
+- [AVA](https://ava.ifpr.edu.br/course/view.php?id=13095) 👉 fazer inscrição
+- [Listas (slides)](aulas/02/02%20-%20LISTAS.pdf) 
