@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Listas</title>
+  <!-- define o css da página -->
+  <style>
+    ol {
+      background: lightgreen;
+      border-bottom: 2px solid black;
+    }
+    /* todo o conteúdo dentro de style é CSS */
+    ul {
+      background: #ccc; /* altera a cor do fundo */
+      color: navy;      /* altera a cor da fonte */
+      border: 2px solid black;
+    }
+    ul.menu {
+      background: green;
+      color: white;
+      border: 0;
+      border-radius: 5px;
+      padding: 1rem; /* define o espaço interno */
+    }
+    ul.menu li {
+      /* coloca os itens da lista na horizontal  */
+      display: inline-block; 
+      padding: 0 1rem;
+    }
+    ul.menu li:hover {
+      /* aplica o estilo quando o mouse passa sobre a tag */
+      color: black;
+      background: whitesmoke;
+    }
+  </style>
+
+</head>
+<body>
+
+  <h2>Menu de navegação</h2>
+  <ul class="menu">
+    <li>Início</li>
+    <li>Nossos cursos</li>
+    <li>Nosso campi</li>
+    <li>Fale conosco</li>
+  </ul>
+
+  <h1>Melhores times do Brasil</h1>
+
+  <ol>
+    <li>Internacional</li>
+    <li>Portuguesa</li>
+    <li>São Paulo</li>
+    <li>Flamengo</li>
+  </ol>
+
+  <h2>Lista dos times selecionados</h2>
+  <ul>
+    <li>Internacional</li>
+    <li>Portuguesa</li>
+    <li>São Paulo</li>
+    <li>Flamengo</li>
+  </ul>
+
+  <h2>Melhores cidades do BR</h2>
+
+  <ul>
+    <li>Paraná
+      <ol>
+        <li>Foz do Iguaçu</li>
+        <li>Medianeira</li>
+      </ol>
+    </li>
+    <li>São Paulo
+      <ol>
+        <li>Santos</li>
+        <li>São Vicente</li>
+      </ol>
+    </li>
+  </ul>
+
+  
+
+  
+</body>
+</html>
