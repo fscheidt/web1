@@ -14,11 +14,12 @@
 </details>
 
 
-## Aula 01
+## Aula 01 - html
 
 - [Introdução ao HTML (slides)](aulas/01/01%20-%20HTML.pdf)
-- [Código (html)](aulas/01/exemplo1.html)
+- [Código (html)](aulas/1-html/exemplo1.html)
 
-## Aula 02
+## Aula 02 - listas
+
 - [AVA](https://ava.ifpr.edu.br/course/view.php?id=13095) 👉 fazer inscrição
-- [Listas (slides)](aulas/02/02%20-%20LISTAS.pdf) 
+- [Código (listas+css)](aulas/2-listas/exemplo2.html) 
