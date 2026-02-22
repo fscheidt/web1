@@ -16,7 +16,7 @@
 
 ## Aula 01 - html
 
-- [Introdução ao HTML (slides)](aulas/01/01%20-%20HTML.pdf)
+- [Introdução ao HTML (slides)](aulas/1-html/01%20-%20HTML.pdf)
 - [Código (html)](aulas/1-html/exemplo1.html)
 
 ## Aula 02 - listas
