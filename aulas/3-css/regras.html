@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>REGRAS CSS</title>
+  <style>
+    /* regra genérica - seleciona todos os parágrafos*/
+    p { 
+      font-family: "Verdana";
+      border: 1px solid black;
+      padding: 10px;
+      margin: 20px 20px 10px 50px;
+    }
+    /* CLASSE */
+    /* regra que seleciona apenas os parágrafos com a classe 'vermelho'*/
+    p.vermelho { 
+      color: red;
+      width: 50%;
+      text-align: right; /* alinhar texto a direita */
+    }
+    /* somente os parágrafos com a classe azul */
+    p.azul {
+      color: blue;
+      font-weight: 700; /* bold */
+      line-height: 2; /* espaço entre as linhas */
+    }
+    span {
+      text-decoration: underline;
+    }
+    /* REGRA POR ID - id da tag deve ser único */
+    #principal { 
+      color: darkcyan;
+    }
+    /* REGRA: somente nome da classe */
+    .destacar { 
+      background-color: yellow;
+    }
+    /* exemplo para retirar a formatação padrão: */
+    h1 { margin: 0; padding: 0; }
+    div {
+      border: 1px solid black;
+      padding: 1rem;
+      margin: 1rem;
+    }
+    .topo {
+      background-color: rgb(123, 152, 152);
+    }
+    .conteudo { 
+      background-color: lightgreen;
+    }
+  </style>
+</head>
+<body>
+<div class="pagina">
+
+  <div class="topo">
+    <h1 id="principal" class="destacar">Tipos de regras CSS</h1>
+  </div>
+
+  <div class="conteudo">
+    <!-- tag span - não possui nenhum estilo sendo útil para criar 
+    regras do css do "zero" -->
+    <p class="vermelho">
+      (1) <span class="destacar">Lorem ipsum</span> dolor sit amet consectetur adipisicing elit. Laboriosam enim incidunt adipisci a deleniti dicta vitae at quo repudiandae dolores sapiente, exercitationem repellat asperiores magnam cumque voluptatum repellendus quaerat est!
+    </p>
+    <p class="azul">
+      (2) Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, eius magni, ducimus possimus maiores magnam voluptatibus recusandae quasi iste error quis qui non architecto aperiam, culpa sed eveniet nisi similique.
+    </p>
+    <p>(3) ultimo parágrafo</p>
+    <p class="azul vermelho">(4) paragrafo especial</p>
+  </div>
+
+</div>
+</body>
+</html>
