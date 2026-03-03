@@ -1,0 +1,4 @@
+Linux é um termo popularmente empregado para se referir a sistemas operacionais que utilizam o Kernel Linux. O núcleo (ou kernel, em Inglês) foi desenvolvido pelo programador finlandês Linus Torvalds, inspirado no sistema Minix. O seu código-fonte está disponível sob a licença GPL (versão 2) para que qualquer pessoa o possa utilizar, estudar, modificar e distribuir livremente de acordo com os termos da licença.
+
+Inicialmente desenvolvido e utilizado por grupos de entusiastas em computadores pessoais, os sistemas operacionais com núcleo Linux passaram a ter a colaboração de grandes empresas como IBM, Sun Microsystems, Hewlett-Packard (HP), Red Hat, Novell, Oracle, Google, Mandriva, Microsoft e Canonical.
+
