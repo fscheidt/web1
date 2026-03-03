@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Layout 1</title>
+  <style>
+    /* 
+    Seletor universal:
+      Reset do CSS inserido pelo navegador 
+    */
+    * { 
+      margin: 0; 
+      padding: 0;
+    }
+    /* h1 { margin: 0 } */
+    .pagina {
+      border: 2px solid #808080;
+      width: 960px; /* define a largura */
+      margin: auto; /* centraliza a pagina */
+    }
+    .topo {
+      background-color: #2e8cab;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+    .menu {
+      background-color: #fceb05;
+      border: 2px solid #808080;
+      height: 30px;  /* remover depois */
+    }
+    .conteudo {
+      height: 300px; /* remover depois */
+      background-color: #faebd7;
+    }
+    .rodape {
+      background-color: #ccc;
+      border-top: 2px solid #808080;
+      height: 50px;  /* remover depois */
+    }
+
+    ul, ol {
+      padding: 10px;
+      margin-left: 40px;
+    }
+    .linha {
+      /* permite colocar os items da div na horizontal */
+      display: flex;
+    }
+  </style>
+</head>
+<body>
+  <div class="pagina">
+    <div class="topo">
+      <h1>topo</h1>
+      <div class="menu"></div>
+    </div>
+    <div class="conteudo">
+      <div class="linha">
+        <ul>
+          <li>item1</li>
+          <li>item2</li>
+        </ul>
+        <ul>
+          <li>item3</li>
+          <li>item4</li>
+        </ul>
+      </div>
+    </div>
+    <div class="rodape"></div>
+  </div>
+  
+</body>
+</html>
