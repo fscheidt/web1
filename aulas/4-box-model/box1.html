@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Box model</title>
+  <style>
+    div { border: 1px solid black; }
+    .caixa1 { /* 162px x 92px */
+      width: 100px;
+      height: 30px;
+      padding: 20px;
+      margin: 10px;
+     }
+     .caixa2 { 
+      width: 100px;
+      height: 30px;
+      padding: 0px;
+      margin: 0px;
+      border: 10px solid black;
+     }
+     .caixa3 { 
+      width: 50%;
+     }
+     .caixa4 { /*  */
+      width: 100px;
+      height: 30px;
+      padding: 20px;
+      margin: 10px;
+      box-sizing: border-box;
+     }
+     /* PROPRIEDADE DISPLAY 
+     - block
+     - inline
+     - inline-block
+     - none
+     */
+
+     p { 
+      display: inline; /* valor padrao: block*/
+      background: yellow;
+    }
+    p:hover {
+       display: none; /* esconde a tag */
+    }
+    span {
+      background: lightblue;
+     }
+    span:hover {
+      /* permite aplicar um estilo quando o mouse passa sobre a tag*/
+      background: lightsalmon;
+    }
+  </style>
+</head>
+<body>
+  <div class="caixa1">caixa 1</div>
+  <div class="caixa2">caixa 2</div>
+  <div class="caixa3">caixa 3</div>
+  <div class="caixa4">caixa 4</div>
+
+  <div>
+    <p>Lorem 1</p>  
+    <p>Lorem 2 </p>
+    
+    <span>lorem span 1</span>
+    <span>lorem span 2</span>
+  </div>
+  
+</body>
+</html>
