@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tabelas</title>
+  <style>
+    th { 
+      background: yellow;
+    }
+    table {
+      border-collapse: collapse;
+      border: 1px solid #747474;
+    }
+    th, td {
+      padding: 5px;
+      border: 1px solid #959595;
+    }
+    caption {
+      padding: .5rem 0rem;
+      text-transform: uppercase;
+      /* caption-side: bottom; */
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 
+  Rank | <Cidade>       | <População>
+  1    | São Paulo      | 11.9 Milhões 
+  2    | Rio de Janeiro | 6.7 M
+  97   | Foz do iguaçu  | 295 mil
+  -->
+
+  <table>
+    <caption>
+      Cidades mais populosas (BR)
+    </caption>
+    <tr>
+      <th>Cidade</th>
+      <th>População</th>
+      <th>Estado</th>
+    </tr>
+    <tr>
+      <td>São Paulo</td>
+      <td>11.9 M </td>
+      <td>SP</td>
+    </tr>
+    <tr>
+      <td>Rio de Janeiro</td>
+      <td>6.7 M</td>
+      <td>RJ</td>
+    </tr>
+    <tr>
+      <td colspan="3"> ... </td>
+    </tr>
+    <tr>
+      <td>Foz do Iguaçu</td>
+      <td>
+        <a href="https://en.wikipedia.org/wiki/Foz_do_Igua%C3%A7u">
+          295 mil
+        </a>
+      </td>
+      <td>PR</td>
+    </tr>
+
+  </table>
+
+  
+</body>
+</html>

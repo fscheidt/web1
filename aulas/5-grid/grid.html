@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grid - tabela</title>
+  <style>
+    .fixo {
+      /* 3 colunas - tamanho fixo (absoluto) */
+      display: grid;
+      grid-template-columns: 100px 80px 100px !important;
+    }
+    .tabela {
+      /* 3 colunas - tamanho relativo */
+      display: grid;
+      max-width: fit-content;
+      grid-template-columns: repeat(3, max-content);
+      border: 1px solid black;
+    }
+    .th { background: yellow; }
+    .tabela div { padding: 5px }
+    .colspan {
+      grid-column: 1/4;
+    }
+  </style>
+</head>
+<body>
+  <!-- <div class="tabela fixo"> -->
+  <div class="tabela">
+    <div class="th">Cidade</div>
+    <div class="th">População</div>
+    <div class="th">Estado</div>
+
+    <div>São Paulo</div>
+    <div>11.6 M</div>
+    <div>SP</div>
+
+    <div class="colspan">...</div>
+
+    <div>Rio de Janeiro</div>
+    <div>6.7 M</div>
+    <div>RJ</div>
+  </div>
+  
+</body>
+</html>
