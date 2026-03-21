@@ -23,3 +23,9 @@
 
 - [AVA](https://ava.ifpr.edu.br/course/view.php?id=13095) 👉 fazer inscrição
 - [Código (listas+css)](aulas/2-listas/exemplo2.html) 
+
+## Outras aulas
+
+- [3. CSS](aulas/3-css/) 
+- [4. Box model](aulas/4-box-model/) 
+- [5. Grid e tabela](aulas/5-grid/) 
