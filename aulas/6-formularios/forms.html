@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulários</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Reddit+Sans:ital,wght@0,200..900;1,200..900&display=swap');
+    form > label { 
+      display: grid;
+      grid-template-columns: 120px max-content;
+      padding: .25rem 0;
+    }
+    label {
+      user-select: none;
+    }
+    form {
+      border: 1px solid #727272;
+      border-radius: 4px;
+      padding: .5rem;
+      background-color: rgba(255, 255, 255, 0.9);
+    }
+    input[type="number"]{
+      width: 150px;
+    }
+    body {
+      font-family: 'Reddit Sans';
+      background-image: 
+      url(https://ava.ifpr.edu.br/pluginfile.php/1/theme_boost_union/loginbackgroundimage/0/bg_login.png);
+    }
+  </style>
+</head>
+<body>
+
+  <form>
+    <label>
+      <span>username</span>
+      <input type="text" name="user" required />
+    </label>
+
+    <label>
+      <span>email</span>
+      <input type="email" name="email" required/>
+    </label>
+
+    <label>
+      <span>senha</span>
+      <input type="password" name="senha"/>
+    </label> 
+
+    <label>
+      <span>nascimento</span>
+      <input 
+        type="date" 
+        name="nascimento"/>
+    </label> 
+
+    <label>
+      <span>serviço</span>
+      <div>
+        <label>
+          <input type="radio" name="quality" value="1"/>
+          <span>bom</span> 
+        </label>
+        <label>
+          <input type="radio" name="quality" value="2"/>
+          <span>ruim</span> 
+        </label>
+      </div>
+    </label> 
+
+    <label>
+      <span>idiomas</span>
+      <div>
+        <label>
+          <input type="checkbox" name="idiomas" value="1"/>
+          <span>inglês</span> 
+        </label>
+        <label>
+          <input type="checkbox" name="idiomas" value="2"/>
+          <span>espanhol</span> 
+        </label>
+      </div>
+    </label> 
+
+    <label>
+      <span>telefone</span>
+      <input type="text" disabled name="telefone" value="(45) 99990-0010"/>
+    </label> 
+
+    <label>
+      <span></span>
+      <input 
+        placeholder="digite sua idade" 
+        type="number" 
+        min="12"
+        max="120"
+        name="idade"
+        />
+    </label> 
+
+    <button>login</button>
+  </form>
+  
+</body>
+</html>

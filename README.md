@@ -29,3 +29,4 @@
 - [3. CSS](aulas/3-css/) 
 - [4. Box model](aulas/4-box-model/) 
 - [5. Grid e tabela](aulas/5-grid/) 
+- [6. Formulários](aulas/6-formularios/) 
