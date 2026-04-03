@@ -8,10 +8,14 @@
     form > label { 
       display: grid;
       grid-template-columns: 120px max-content;
+      gap: 10px;
       padding: .25rem 0;
     }
     label {
       user-select: none;
+    }
+    form > label > span {
+      justify-self: right;
     }
     form {
       border: 1px solid #727272;
@@ -24,9 +28,23 @@
     }
     body {
       font-family: 'Reddit Sans';
-      background-image: 
-      url(https://ava.ifpr.edu.br/pluginfile.php/1/theme_boost_union/loginbackgroundimage/0/bg_login.png);
+      /* background-image: url(https://ava.ifpr.edu.br/pluginfile.php/1/theme_boost_union/loginbackgroundimage/0/bg_login.png); */
+      background-image: url("bg_login.png");
+      background-attachment: fixed;
+      background-position: right;
+      background-size: cover;
+      background-repeat: no-repeat;
     }
+    input:required {
+      border: 1px solid rgb(187, 14, 74);
+    }
+    input:required:valid {
+      background-color: #7fffd4;
+    }
+    input:required:invalid {
+      color: red;
+    }
+    
   </style>
 </head>
 <body>
@@ -34,7 +52,13 @@
   <form>
     <label>
       <span>username</span>
-      <input type="text" name="user" required />
+      <input 
+        type="text" 
+        name="user" 
+        required 
+        autocomplete="off"
+        minlength="4" 
+      />
     </label>
 
     <label>
@@ -46,6 +70,21 @@
       <span>senha</span>
       <input type="password" name="senha"/>
     </label> 
+
+    <label>
+      <span>estado</span>
+      <select name="estado">
+        <option value=""></option>
+        <option value="PR"> Paraná </option>
+        <option value="RS"> Rio Grande do Sul </option>
+        <option value="SP"> São Paulo </option>
+      </select>
+    </label> 
+
+    <label>
+      <span>observações</span>
+      <textarea cols="20" rows="4" name="observacoes"></textarea>
+    </label>
 
     <label>
       <span>nascimento</span>
