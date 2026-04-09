@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Pseudo classes</title>
+  <style>
+    /* pseudo classe */
+    li:first-child{
+      font-weight: bold;
+    }
+    li:last-child{
+      color: red;
+    }
+    a:link {
+      color: navy;
+    }
+    a:visited{
+      color: #cc32a5;
+    }
+    a:hover{
+      filter: invert(1);
+    }
+    tr:nth-child(2n){
+      background-color: aquamarine;
+    }
+    tr:nth-child(2n+1){
+      background-color: #f9ff7f;
+    }
+    
+  </style>
+</head>
+<body>
+  
+  <ol>
+    <li>item 1</li>
+    <li>item 2</li>
+    <li>item 3</li>
+  </ol>
+
+  <a href="https://developer.mozilla.org">mozila</a>
+
+
+  <table>
+    <tr>
+      <th>Cidade</th>
+      <th>População</th>
+      <th>Estado</th>
+    </tr>
+    <tr>
+      <td>São Paulo</td>
+      <td>11.9 M </td>
+      <td>SP</td>
+    </tr>
+    <tr>
+      <td>Rio de Janeiro</td>
+      <td>6.7 M</td>
+      <td>RJ</td>
+    </tr>
+        <tr>
+      <td>Rio de Janeiro</td>
+      <td>6.7 M</td>
+      <td>RJ</td>
+    </tr>
+        <tr>
+      <td>Rio de Janeiro</td>
+      <td>6.7 M</td>
+      <td>RJ</td>
+    </tr>
+    <tr>
+      <td>Foz do Iguaçu</td>
+      <td>
+        <a href="https://en.wikipedia.org/wiki/Foz_do_Igua%C3%A7u">
+          295 mil
+        </a>
+      </td>
+      <td>PR</td>
+    </tr>
+
+  </table>
+
+</body>
+</html>
