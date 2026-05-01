@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Javascript 1</title>
+</head>
+<body>
+  
+  <h1>teste javascript</h1>
+
+  <script>
+    // 1. exibir mensagem
+    
+    
+    
+    // 1 - sucinta
+    alert(
+      "Data e Hora atual: " + new Date().toLocaleString()
+    );
+    // 2 - verbosa 
+    let texto = "Data e Hora atual: ";
+    let datahora =  new Date().toLocaleString();
+    let mensagem = texto + datahora;
+    alert(mensagem);
+
+
+
+
+
+    // 2. pedir informação
+    // let idade = prompt("Digite sua idade");
+    // alert("sua idade: " + idade);
+
+    // 3. pedir confirmação
+    let excluir = confirm("Confirma exclusão da conta?");
+    // alert("confirma: " + excluir);
+    console.log("confirma: " + excluir);
+    // console.log(typeof(excluir)) // qual o tipo da variável?
+    if ( excluir ) {
+      alert("conta excluida com sucesso!");
+      document.body.style.backgroundColor = "red";
+    } else {
+      alert("obrigado por continuar com a gente");
+      document.body.style.backgroundColor = "green";
+    }
+
+    // 4. objeto document
+    // equivalente => body { background-color: yellow }
+    // document.body.style.backgroundColor = "yellow";
+
+
+  </script>
+</body>
+</html>
