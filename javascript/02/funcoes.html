@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Funções JS</title>
+</head>
+<body>
+  <div style="display:flex;flex-direction:column;width:100px">
+    <input id="preco" type="number" placeholder="preço" value="150">
+    <input id="desconto" type="number" placeholder="desconto" value="0.9">
+    <input id="res" type="text" value="0"/>
+  </div>
+
+  <script>
+    function calcularDesconto(preco, desconto){
+      let precoDesconto = Number(preco) * Number(desconto);
+      return precoDesconto;
+    }
+    // 1 - modo sucinto
+    document.getElementById("res").value = calcularDesconto(preco.value, desconto.value);
+    // 2 - modo verboso
+    // salva em uma variavel a referencia para a input#res
+    let inputResultado = document.getElementById("res");
+    // atribui resultado da funcao como valor da input res
+    inputResultado.value = calcularDesconto(preco.value, desconto.value);    
+  </script>
+</body>
+</html>

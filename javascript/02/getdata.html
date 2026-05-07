@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>getElement</title>
+</head>
+<body>
+
+  <input id="datahora"/>
+  <button onclick="obtemData()" >atualizar</button>
+  <script>
+    function obtemData(){
+      let d = new Date().toLocaleString();
+      // pega a referencia a tag input
+      let input = document.getElementById("datahora");
+      // atribui o valor da datahora para a input
+      input.value = d;
+    }
+    obtemData(); // pega a data quando a pagina é carregada
+  </script>
+  
+</body>
+</html>
