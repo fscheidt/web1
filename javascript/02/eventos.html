@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    div {
+      border: 1px solid #888;
+      padding: 1rem;
+      background-color: #e6e6ce;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Eventos</h1>
+
+  <h2>Mouse</h2>
+
+  <p onmouseover="alteraCor(this, 'red')">
+    paragrafo
+  </p>
+  <div 
+    onmouseover="alteraCor(this, 'yellow')"
+    onmouseout="alteraCor(this, '#ccc')"
+    >
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam distinctio beatae velit numquam modi animi sint minus minima dignissimos in ex reiciendis vitae, quas atque consequuntur amet mollitia excepturi itaque!
+  </div>
+
+  <h2>Teclado</h2>
+
+  <input 
+    placeholder="digite seu nome" 
+    type="text" 
+    onkeyup="nome2.value=converteMaiusculo(this.value)"
+    >
+    <!-- onkeydown="nome2.value=converteMaiusculo(this.value)" -->
+    <!-- onkeyup="nome2.value=converteMaiusculo(this.value)" -->
+    <!-- onkeypress="nome2.value=converteMaiusculo(this.value)" -->
+  <input id="nome2" type="text" disabled/>
+
+  <script>
+    function converteMaiusculo(texto){
+      // console.log('convertendo texto:', texto);
+      return texto.toUpperCase();
+    }
+
+    function alteraCor(elemento, cor){
+      // altera a cor de background do elemento 
+      elemento.style.backgroundColor = cor;
+    }
+  </script>
+  
+</body>
+</html>
