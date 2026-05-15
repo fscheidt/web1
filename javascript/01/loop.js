@@ -1,11 +1,11 @@
-// declara a função 
-function imprimeTitulo(){
-  document.write("<h1>titulo 1</h1>");
-  document.write("<h2>titulo 2</h2>");
-  for(let i=0; i < 10; i++){
-    document.write(`<h3>titulo ${i+1}</h3>`);
+// declara a função com dois parâmetros
+function imprimeTitulo(texto, qtde){
+  for(let i=0; i < qtde; i++) {
+    let count = i + 1;
+    let conteudo = "<h1>" + texto + " " + count  +"</h1>";
+    document.write(conteudo);
   }
 }
-// chama a função 
-imprimeTitulo()
+imprimeTitulo("Titulo", 2) // chama a função 
+imprimeTitulo("Teste", 5)
 

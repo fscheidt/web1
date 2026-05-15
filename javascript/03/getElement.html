@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Get element</title>
+  <style>
+    #errors {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+
+  <input
+    id="senha"
+    type="password" 
+    placeholder="digite sua senha">
+  <button onclick="login()">login</button>
+  <button onclick="revelar()">revelar</button>
+
+  <div id="errors"></div>
+
+  <script>
+    function revelar() {
+      let input = document.getElementById("senha");
+      // permite alterar o valor do atributo (id, type, placeholder)
+      let type = input.getAttribute("type"); // lê o valor do atributo
+      if (type == "password")
+        input.setAttribute("type", "text");  // atribui o valor do atributo
+      else 
+        input.setAttribute("type", "password");
+    }
+    function login() {
+      // a função getElement retorna "um elemento (tag)"
+      let input = document.getElementById("senha");
+      // console.log(input); // imprime a tag
+      console.log(input.value); // imprime o valor
+      if (input.value.length < 4 ) { 
+        // testa a quantidade de caracteres da senha
+        // alert("senha deve conter no mínimo 4 caracteres")
+        document.getElementById("errors").textContent = "senha deve conter no mínimo 4 caracteres";
+        // usar textContent quando o elemento é uma div, p, span, h1...
+
+        // melhor solução para selecionar um elemento (tag):
+        document.querySelector("#errors").textContent = "senha deve ter no mínimo 4 caracteres";
+      }
+    }
+  </script>
+</body>
+</html>
